@@ -8,26 +8,25 @@ import SectionModal from './Sections/SectionModal'
 export default class PresentationApp extends React.Component {
 	state = {
 		sections: ['Introduction', 'Story', 'Conclusion'],
-		showModal: false
+		modalIsOpen: false
 	}
-	handleBeginSection = (e, section) => {
-		e.preventDefault()
-		this.setState((prevState) => ({ selectedSection: !prevState }))
+	handleBeginSection = (section) => {
+		this.setState((prevState) => ({ modalIsOpen: !prevState }))
 		switch (section) {
 			case 'Introduction':
 				console.log(section)
 				return (
-					<SectionModal section={section} modalIsOpen={this.state.showModal} contentLabel={section} />
+					<SectionModal section={section} modalIsOpen={this.state.modalIsOpen} contentLabel={section} />
 				)
 			case 'Story':
 				console.log(section)
 				return (
-					<SectionModal section={section} modalIsOpen={this.state.showModal} contentLabel={section} />
+					<SectionModal section={section} modalIsOpen={this.state.modalIsOpen} contentLabel={section} />
 				)
 			case 'Conclusion':
 				console.log(section)
 				return (
-					<SectionModal section={section} modalIsOpen={this.state.showModal} contentLabel={section} />
+					<SectionModal section={section} modalIsOpen={this.modalIsOpen} contentLabel={section} />
 				)
 		}
 	}
