@@ -1,0 +1,32 @@
+.add-section-error {
+	color: $off-white;
+	font-style: italic;
+	padding: 0 $m-size;
+	margin-top: $m-size;
+}
+
+.add-section {
+	display: flex;
+	flex-direction: column;
+	padding: $m-size;
+}
+
+
+.add-section-input {
+	flex-grow: 1;
+	background: $dark-blue;
+	color: $off-white;
+	padding: $s-size;
+	border: none;
+	border-bottom: .3rem solid darken($dark-blue, 10%);
+	margin-right: 0 $s-size 0 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+	.add-section {
+		flex-direction: row;
+	}
+	.add-section-input {
+		margin: 0 $s-size 0 0;
+	}
+}
