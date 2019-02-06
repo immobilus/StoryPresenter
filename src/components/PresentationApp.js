@@ -11,6 +11,7 @@ export default class PresentationApp extends React.Component {
 		selectedSection: undefined
 	}
 	handleBeginSection = (section) => {
+		this.setState((prevState) => ({ selectedSection: !!prevState }))
 		switch (section) {
 			case 'Introduction':
 				console.log(section)
