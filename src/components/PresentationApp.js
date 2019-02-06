@@ -8,7 +8,7 @@ import SectionModal from './Sections/SectionModal'
 export default class PresentationApp extends React.Component {
 	state = {
 		sections: ['Introduction', 'Story', 'Conclusion'],
-		selectedSection: undefined
+		selectedSection: false
 	}
 	handleBeginSection = (section) => {
 		this.setState((prevState) => ({ selectedSection: !prevState }))
@@ -16,19 +16,23 @@ export default class PresentationApp extends React.Component {
 			case 'Introduction':
 				console.log(section)
 				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
+					<SectionModal section={section} modalIsOpen={this.state.selectedSection} contentLabel={section} />
 				)
 			case 'Story':
 				console.log(section)
 				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
+					<SectionModal section={section} modalIsOpen={this.state.selectedSection} contentLabel={section} />
 				)
 			case 'Conclusion':
 				console.log(section)
 				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
+					<SectionModal section={section} modalIsOpen={this.state.selectedSection} contentLabel={section} />
 				)
 		}
+	}
+	handleEndSection(section) {
+		console.log(section)
+		return
 	}
 	componentDidMount() {
 		try {
