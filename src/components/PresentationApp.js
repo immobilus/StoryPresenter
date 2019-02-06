@@ -5,36 +5,20 @@ import SectionModal from './Sections/SectionModal'
 
 /* Class Property Methods - Requires Babel Phase 2 plugin: babel-plugin-transform-class-properties */
 
-export default class WarneAppeal extends React.Component {
+export default class PresentationApp extends React.Component {
 	state = {
 		sections: ['Introduction', 'Story', 'Conclusion'],
 		selectedSection: undefined
 	}
 	handleBeginSection = (section) => {
-		console.log(section)
 		switch (section) {
 			case 'Introduction':
 				console.log(section)
 				return (
 					<SectionModal section={section} isOpen={this.state.selectedSection} />
 				)
-			case 'The ASU Case':
+			case 'Story':
 				console.log(section)
-				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
-				)
-			case 'Threats and Ultimatums':
-				console.log(section)
-				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
-				)
-			case 'MCOM 5332':
-				console.log(section)
-				return (
-					<SectionModal section={section} isOpen={this.state.selectedSection} />
-				)
-			case 'MCOM 5332':
-				console.log(section) 
 				return (
 					<SectionModal section={section} isOpen={this.state.selectedSection} />
 				)
@@ -44,8 +28,6 @@ export default class WarneAppeal extends React.Component {
 					<SectionModal section={section} isOpen={this.state.selectedSection} />
 				)
 		}
-			
-
 	}
 	componentDidMount() {
 		try {
@@ -71,8 +53,8 @@ export default class WarneAppeal extends React.Component {
 			<div>
 				<Header subtitle={subtitle} />
 				<div className="container">
-					<div className="widget">
-						<Sections sections={this.state.sections} handleBeginSection={this.handleBeginSection} />
+					<div>
+						<Sections className="widget" sections={this.state.sections} handleBeginSection={this.handleBeginSection} />
 					</div>
 				</div>
 			</div>
