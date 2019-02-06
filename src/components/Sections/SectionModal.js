@@ -5,7 +5,7 @@ const SectionModal= (props) => (
 	<Modal 
 		className="modal" 
 		section={props.section}
-		isOpen={true}
+		isOpen={props.modalIsOpen}
 		contentLabel={props.section}
 		>
 		<h1>This is the {props.section} modal.</h1>
