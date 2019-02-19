@@ -6,8 +6,8 @@ const Section = (props) => {
 			<p className="section__text">{props.section}</p> 
 			<button 
 				className="button" 
-				onClick={(e) => {
-					props.handleBeginSection(props.section)
+				onClick={() => {
+					props.handleBeginSection()
 				}}>
 					Begin
 			</button>

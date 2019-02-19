@@ -9,7 +9,8 @@ const Sections = (props) => {
 					return (
 						<Section 
 							key={section} 
-							section={section} 
+							section={section}
+							activeSection={props.activeSection}
 							handleBeginSection={props.handleBeginSection} />
 					)
 				})

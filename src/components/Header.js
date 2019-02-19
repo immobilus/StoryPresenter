@@ -14,7 +14,8 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-	title: 'Story Presenter'
+	title: 'Story Presenter',
+	subtitle: 'A story presentation application!'
 }
 
 export default Header
