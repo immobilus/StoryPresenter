@@ -4,7 +4,7 @@ import Modal from 'react-modal'
 const SectionModal = (props) => (
 	<Modal
 		isOpen={props.modalIsOpen}
-		contentLablel={props.section}
+		contentLabel={props.section}
 		ariaHideApp={false}
 	>
 		<h2>Selected Section</h2>
