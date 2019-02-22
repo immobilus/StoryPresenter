@@ -44,7 +44,7 @@ export default class PresentationApp extends React.Component {
 							handleBeginSection={this.handleBeginSection} />
                     </div>
                 </div>
-                <SectionModal modalIsOpen={this.state.modalIsOpen} handleEndSection={this.handleEndSection} />
+                <SectionModal section={this.state.activeModal}  modalIsOpen={this.state.modalIsOpen} handleEndSection={this.handleEndSection} />
             </div>
         )
     }
