@@ -1,0 +1,32 @@
+.header {
+	background: $off-black;
+	color: #fff;
+	margin-bottom: $xl-size;
+	padding: $m-size 0;
+}
+
+.header__title {
+	font-size: $l-size;
+	margin: 0;
+}
+
+.header__subtitle {
+	color: $off-white;
+	font-size: $m-size;
+	font-weight: 500;
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+}
+
+.header__citation {
+	color: $off-white;
+	font-size: $m-size;
+	font-weight: 500;
+	font-family: Helvetica, sans-serif;
+	margin-right: 36.5%;
+	text-align: right;
+}
+
+.header__citation + p {
+	margin-bottom: $m-size;
+}

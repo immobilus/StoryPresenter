@@ -1,0 +1,25 @@
+.footer {
+	background: $off-black;
+	color: #fff;
+	margin-bottom: $xl-size;
+	padding: $m-size 0;
+	margin-bottom: 0;
+}
+
+.footer__text {
+	color: $off-white;
+	filter: brightness(175%);
+	font-size: $m-size;
+	font-weight: 500;
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+.footer__author {
+	color: $red;
+	-webkit-text-decoration: underline solid $off-white;
+	-ms-text-decoration: underline solid $off-white;
+	-o-text-decoration: underline solid $off-white;
+	text-decoration: underline solid $off-white;
+}

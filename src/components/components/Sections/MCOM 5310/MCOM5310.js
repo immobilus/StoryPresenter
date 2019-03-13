@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Conclusion= (props) => {
+const MCOM5310 = (props) => {
 	return (
 		<div>
-			<h1>Conclusion</h1>
+			<h1>MCOM 5310</h1>
 			<p>This bit of content comes fropm the {props.activeSection}.js component.</p>
-			<p>Conclusion content hard-coded here.</p>
+			<p>MCOM 5310 arguments and content hard-coded here.</p>
 		</div>
 	)
 }
 
-export default Conclusion
+export default MCOM5310
